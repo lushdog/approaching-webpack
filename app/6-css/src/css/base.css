@@ -1,0 +1,12 @@
+html {
+  background: firebrick;
+}
+/* base.css */
+.box {
+  /* 引入common.css 的big-box类 */
+  composes: big-box from './common.css';
+  height: 200px;
+  width: 200px;
+  border: 4px;
+  background: lightcyan;
+}
