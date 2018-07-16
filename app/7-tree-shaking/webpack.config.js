@@ -1,6 +1,7 @@
 const path = require('path')
 const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin')
-
+const Purifycss = require('purifycss-webpack')
+const glob = require('glob-all')
 
 module.exports = {
   entry: {
@@ -11,26 +12,24 @@ module.exports = {
     publicPath: './dist/',
     filename: '[name].bundle.js'
   },
+  optimization: {
+    minimize: true
+  },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
           {
-            // loader: 'style-loader/useable',
             loader: 'style-loader',
             options: {
-              // insertInto: '#app', // 指定插入到哪个标签下
               singleton: true, // 只插入一个style
-              transform: './css.transform.js'
             }
           },
           {
             loader: 'css-loader',
             options: {
               minimize: true,
-              modules: true, // 开启 css 模块化
-              localIdentName: '[path][name]_[local]_[hash:base64:5]' // 自定义模块化类名
             }
           }
         ]
@@ -67,6 +66,12 @@ module.exports = {
     new ExtractTextWebpackPlugin({
       filename: '[name].min.css',
       allChunks: false
+    }),
+    new Purifycss({
+      paths: glob.sync([
+        path.resolve(__dirname, './*.html'),
+        path.join(__dirname, './src/*.js')
+      ])
     })
   ]
 }

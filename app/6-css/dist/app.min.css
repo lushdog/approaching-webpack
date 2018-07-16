@@ -1,0 +1,8 @@
+.base {
+  color: blue;
+  -webkit-transform: rotate('20deg');
+          transform: rotate('20deg');
+}
+a {
+  color: lightblue;
+}

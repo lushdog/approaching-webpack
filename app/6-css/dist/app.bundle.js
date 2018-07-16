@@ -97,17 +97,6 @@ eval("module.exports = function (css) {\r\n  console.log(css);\r\n  console.log(
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/css/base.less":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js!./src/css/base.less ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ \"./node_modules/css-loader/lib/css-base.js\")(false);\n// imports\n\n\n// module\nexports.push([module.i, \".base {\\n  color: blue;\\n}\\n\", \"\"]);\n\n// exports\n\n\n//# sourceURL=webpack:///./src/css/base.less?./node_modules/css-loader!./node_modules/less-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/index.js?!./src/css/base.css":
 /*!**************************************************************!*\
   !*** ./node_modules/css-loader??ref--4-1!./src/css/base.css ***!
@@ -191,9 +180,9 @@ eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader??re
   !*** ./src/css/base.less ***!
   \***************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/less-loader/dist/cjs.js!./base.less */ \"./node_modules/css-loader/index.js!./node_modules/less-loader/dist/cjs.js!./src/css/base.less\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/css/base.less?");
+eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./src/css/base.less?");
 
 /***/ }),
 
