@@ -1,0 +1,30 @@
+.bigBox {
+  height: 400px;
+  width: 400px;
+  border: 5px;
+}
+.bigBox > div {
+  width: 128px;
+  height: 128px;
+  float: left;
+}
+.bigBox .ani1 {
+  background-image: url(../dist/assets/imgs/sprites/sprite.min.png);
+  background-position: -291px -286px;
+  background-size: 602px 542px;
+}
+.bigBox .ani2 {
+  background-image: url(../dist/assets/imgs/sprites/sprite.min.png);
+  background-position: -294px 0px;
+  background-size: 602px 542px;
+}
+.bigBox .ani3 {
+  background-image: url(../dist/assets/imgs/sprites/sprite.min.png);
+  background-position: 0px 0px;
+  background-size: 602px 542px;
+}
+.bigBox .ani4 {
+  background-image: url(../dist/assets/imgs/sprites/sprite.min.png);
+  background-position: 0px -286px;
+  background-size: 602px 542px;
+}
